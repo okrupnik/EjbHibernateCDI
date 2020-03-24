@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+</h:head>
+<h:body>
+	<h1>Check User</h1>
+	<h:form id="loginForm">
+		<h:panelGrid columns="3">
+			<h:outputLabel value="Login:" for="login" />
+			<h:inputText id="login" value="#{exampleCDI.login}" />
+			<h:message for="login" style="color:red"></h:message>
+
+			<h:outputLabel value="Password:" for="password" />
+			<h:inputSecret id="password" value="#{exampleCDI.password}" />
+			<h:message for="password" style="color:red"></h:message>
+
+			<h:commandButton value="Sign in" action="#{exampleCDI.checkUser}" />
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

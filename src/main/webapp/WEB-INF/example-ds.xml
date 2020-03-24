@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources
+	schemaLocation="http://docs.jboss.org/ironjacamar/schema/datasources_1_1.xsd">
+	<datasource jndi-name="java:jboss/exampleDS" pool-name="PostgresSQLPool">
+		<connection-url>jdbc:postgresql://localhost:5432/example</connection-url>
+		<driver>postgresql-42.2.11.jar</driver>
+		<driver-class>org.postgresql.Driver</driver-class>
+		<pool>
+			<max-pool-size>30</max-pool-size>
+		</pool>
+		<security>
+			<user-name>postgres</user-name>
+			<password>postgres</password>
+		</security>
+		<validation>
+			<check-valid-connection-sql>select 1</check-valid-connection-sql>
+		</validation>
+	</datasource>
+</datasources>

@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+</h:head>
+<h:body>
+	<h1>Hello - EJB + Hibernate + CDI</h1>
+	<h:form id="indexForm">
+		<h:panelGrid columns="1">
+			<h:commandLink value="Sign In" action="checkUser" />
+			<p />
+			<h:commandLink value="Create User" action="createUser" />
+			<p />
+			<h:commandLink value="List of User" action="listOfUser" />
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>
